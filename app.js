@@ -1,3 +1,8 @@
-const fs = require("fs");
+const http = require("http");
+const routes = require("./routes");
 
-fs.writeFileSync("log.txt", "first test");
+const server = http.createServer(routes);
+
+server.listen(9000);
+
+console.log("De server is gestart op http://localhost:9000");

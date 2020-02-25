@@ -1,0 +1,3 @@
+POST /logging MESSAGE {
+	"message": "content moet ingevuld worden."
+}
